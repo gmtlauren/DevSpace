@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>DevSpace | Portifólio</title>
+
+
+<!-- SEO básico -->
+  <meta name="description" content="Portfólio de desenvolvedora: projetos, habilidades e tecnologias." />
+  <meta name="author" content="Dev Space"/>
+
+<!-- CSS (ordem: frameworks -> seu CSS) -->
+  <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="./css/style_ola.css" />
+
+<!-- Fontes (mantidas para compatibilidade com seu projeto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Noto+Sans+Egyptian+Hieroglyphs&family=Open+Sans:wght@500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  
+<!-- Acessibilidade: pular direto para o conteúdo -->
+  <a href="#conteudo" class="visually-hidden-focusable">Pular para o conteúdo principal</a>
+
+<!-- Início Menu -->
+  <header id="header">
+    <a id="logo" href="./index.html" aria-label="Ir para a página inicial">
+      <img src="img/logo.devspace.png" alt="Logo DevSpace" />
+    </a>
+
+    <nav id="nav" aria-label="Menu principal">
+      <button
+        aria-label="Abrir Menu"
+        id="btn-mobile"
+        aria-haspopup="true"
+        aria-controls="menu"
+        aria-expanded="false"
+        type="button"
+      >
+        <span id="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <ul id="menu" role="menu">
+        <li role="none"><a class="linkMenu" role="menuitem" href="./index.html" aria-current="page">Home</a></li>
+        <li role="none"><a class="linkMenu" role="menuitem" href="./sobre.html">Sobre</a></li>
+        <li role="none"><a class="linkMenu" role="menuitem" href="./projetos.html">Projetos</a></li>
+        <li role="none"><a class="linkMenu" role="menuitem" href="./contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- Fim Menu -->
+
+<!-- Conteúdo principal -->
+  <main id="conteudo">
+<!-- Texto Alternativo (mantido para compatibilidade com seu CSS/JS) -->
+    <section aria-label="Texto alternativo" id="hieroglyph"></section>
+
+<!-- Carousel Página Principal -->
+    <section aria-label="Destaques em banner">
+      <div
+        id="carouselExampleInterval"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-pause="none"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="800">
+            <img
+              src="./img/carousel_1_1280-x-720-gaming.jpg"
+              class="d-block w-100"
+              alt="Projetos de desenvolvimento"
+            />
+          </div>
+
+          <div class="carousel-item" data-bs-interval="800">
+            <img
+              src="./img/carousel_2_1280-x-720-gaming.jpg"
+              class="d-block w-100"
+              alt="Tecnologias web"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="carousel-item" data-bs-interval="8000">
+            <img
+              src="./img/carousel_3_1280-x-720-gaming.jpg"
+              class="d-block w-100"
+              alt="Soluções digitais"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          data-bs-target="#carouselExampleInterval"
+          type="button"
+          data-bs-slide="prev"
+          aria-label="Voltar banner"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          data-bs-target="#carouselExampleInterval"
+          type="button"
+          data-bs-slide="next"
+          aria-label="Avançar banner"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
+<!-- Fim Carousel -->
+
+
+
+
+<!-- Iníncio BANNER -->
+     <section class="section-banner-home" aria-label="Chamada Principal">
+        <div class="container-fluid">
+            <div class="row m-0">
+                <div class="col-12 col-md-g">
+                    <figure>
+                        <img scr="./img/banner_principal.png"alt="Desenvolvimento de software" loading="lazy"/>
+                    </figure>
+
+                </div>
+                <div class="col-12 col-md-6">
+                    <section class="texto-banner d-none d-md-block"aria-label="Mensagem Principal">
+                        <h1>Transformando ideias em código!</h1>
+                        <p class="d-none d-md-block">
+                          Estudante de Análise e Desenvolvimento de Sistemas, focada em desenvolvimento web,
+                          lógica de programação e criação de soluções digitais.
+                        </p>
+                        <a href="#" aria-label="Saiba mais sobre os lançamentos">Saiba Mais</a>
+                    </section>
+                </div>
+            </div>    
+        </div>        
+<!-- Fim BANNER -->
+
+
+<!-- Inicio Destaques -->
+     <section class="destaque" arial-label="Coleções de Relíquias">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <header class="col-12">
+                    <h2>Meus Projetos</h2>
+
+                    <p> 
+                      Alguns projetos desenvolvidos durante meus estudos.
+                    </p>
+
+                 </header>
+                 <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                    <a href="./produtos.html" aria-label="Veja mais de cada galáxia!">
+                    <img src="./img/projeto.arduino.jpeg"
+                    alt="Projeto Arduino" width="100%" loading="loading="lazy>
+                </a>
+                <figcaption>NekoBot | Robô Irrigador em Arduino<br></figcaption>
+                 </figure>
+                </div>
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                    <a href="./produtos.html" aria-label="Veja mais de cada galáxia!">
+                    <img src="./img/casamento.ogzd.png"
+                    alt="Projeto HTML" width="100%" loading="loading="lazy>
+                </a>
+                <figcaption>Seu Casamento Organizado | HTML<br></figcaption>
+                 </figure>
+                </div>
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                    <a href="./produtos.html" aria-label="Veja mais de cada galáxia!">
+                    <img src="./img/make.beauty.png"
+                    alt="Make Beauty" width="100%" loading="loading="lazy>
+                </a>
+                <figcaption>Make Beauty |<br>Sistema Banco de Dados</figcaption>
+                 </figure>
+                </div>
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                    <a href="./produtos.html" aria-label="Veja mais de cada galáxia!">
+                    <img src="./img/neko.water.jpeg"
+                    alt="Neko Water" width="100%" loading="loading="lazy>
+                </a>
+                <figcaption>Neko Water | Sistema de Monitoramento de Reservatórios<br></figcaption>
+                 </figure>
+                </div>
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                    <a href="./produtos.html" aria-label="Veja mais de cada galáxia!">
+                    <img src="./img/lumi.solar.jpeg"
+                    alt="Lumi Solar" width="100%" loading="loading="lazy>
+                </a>
+                <figcaption>Lumi Solar | Plataforma Interativa Revolucionária<br></figcaption>
+                 </figure>
+                </div>
+                <div class="col-6 col-md-2 pr-0">
+                    <figure>
+                    <a href="./produtos.html" aria-label="Veja mais de cada galáxia!">
+                    <img src="./img/media.notas.png"
+                    alt="Calculadora de Notas" width="100%" loading="loading="lazy>
+                </a>
+                <figcaption>Calculadora de Notas | JAVA<br></figcaption>
+                 </figure>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <a id="saiba mais" href="./produtos.html" arial-label="Ir para a página de produtos">Saiba Mais</a>
+
+                </div>
+            </div>
+        </div>
+     </section> 
+<!-- Fim Destaque -->
+
+
+
+<!-- Inicio Novidades -->
+  <section class="novidades" id="novidades-mobile" aria-label="novidades">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <section class="text-body" aria-label="Texto de Novidades">
+                <h2>Conheça as Novidades do mundo Astronômico</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Non eaque in a consectetur reiciendis enim aliquam, eligendi facere veritatis accusamus velit fugit,
+                  obcaecati commodi repellendus necessitatibus perferendis aliquid debitis quidem?
+                </p>
+                <a class="btn banner" href="#"  target="_blank" rel="noopener norferrer">Saiba Mais</a>
+              </section>
+
+            </div>
+
+            <div class="col-md-6">
+              <figure>
+                <img scr="img-fluid" src="./img/novidades.png"  alt="Banner: Novidades da Astronimia" loading="lazy"/>
+              </figure>
+            </div>
+
+          </div>
+
+        </div>
+
+  </section>
+<!-- Fim Novidades -->
+
+
+
+ <!-- Inicio Galeria -->
+ <section class="galeria d-flex align-itens-center" aria-label="Galeria de Imagens">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <section class="texto-galeria" aria-label="Introdução da Galeria">
+          <h2>Conheça nossa Galeria</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel et molestias error cupiditate nostrum expedita, explicabo tempora perferendis veniam doloribus excepturi illo corporis earum vero provident repellendus similique voluptas vitae!
+          </p>
+        </section>
+      </div>
+      <!-- Inicio Imagem 1 -->
+       <div class="gallery col-6 col-md-3">
+        <img src="./img/galeria-01.png" class="img-fluid" alt="Imagem da Galeria 1" loading="lazy"/>
+       </div>
+      <!-- Fim da Imagem 1 -->
+
+      <!-- Inicio Imagem 2 -->
+       <div class="gallery col-6 col-md-3">
+        <img src="./img/galeria-02.png" class="img-fluid" alt="Imagem da Galeria 2" loading="lazy"/>
+       </div>
+      <!-- Fim da Imagem 2 -->
+
+      <!-- Inicio Imagem 3 -->
+       <div class="gallery col-6 col-md-3">
+        <img src="./img/galeria-03.png" class="img-fluid" alt="Imagem da Galeria 3" loading="lazy"/>
+       </div>
+      <!-- Fim da Imagem 3 -->
+
+      <!-- Inicio Imagem 4 -->
+       <div class="gallery col-6 col-md-3">
+        <img src="./img/galeria-04.png" class="img-fluid" alt="Imagem da Galeria 4" loading="lazy"/>
+       </div>
+      <!-- Fim da Imagem 4 -->
+
+      <!-- Inicio Imagem 5 -->
+       <div class="gallery col-6 col-md-3">
+        <img src="./img/galeria-05.png" class="img-fluid" alt="Imagem da Galeria 5" loading="lazy"/>
+       </div>
+      <!-- Fim da Imagem 5 -->
+
+      <!-- Inicio Imagem 6 -->
+       <div class="gallery col-6 col-md-3">
+        <img src="./img/galeria-06.png" class="img-fluid" alt="Imagem da Galeria 6" loading="lazy"/>
+       </div>
+      <!-- Fim da Imagem 6 -->
+
+      <!-- Inicio Imagem 7 -->
+       <div class="gallery col-6 col-md-3">
+        <img src="./img/galeria-07.png" class="img-fluid" alt="Imagem da Galeria 7" loading="lazy"/>
+       </div>
+      <!-- Fim da Imagem 7 -->
+
+      <!-- Inicio Imagem 8 -->
+       <div class="gallery col-6 col-md-3">
+        <img src="./img/galeria-08.png" class="img-fluid" alt="Imagem da Galeria 8" loading="lazy"/>
+       </div>
+      <!-- Fim da Imagem 8 -->
+
+      <!-- Inicio Imagem 9 -->
+       <div class="gallery col-6 col-md-3">
+        <img src="./img/galeria-09.png" class="img-fluid" alt="Imagem da Galeria 9" loading="lazy"/>
+       </div>
+      <!-- Fim da Imagem 9 -->
+
+      <!-- Inicio Imagem 10 -->
+       <div class="gallery col-6 col-md-3">
+        <img src="./img/galeria-10.png" class="img-fluid" alt="Imagem da Galeria 10" loading="lazy"/>
+       </div>
+      <!-- Fim da Imagem 10 -->
+
+      <!-- Inicio Imagem 11 -->
+       <div class="gallery col-6 col-md-3">
+        <img src="./img/galeria-11.png" class="img-fluid" alt="Imagem da Galeria 11" loading="lazy"/>
+       </div>
+      <!-- Fim da Imagem 11 -->
+
+      <!-- Inicio Imagem 12 -->
+       <div class="gallery col-6 col-md-3">
+        <img src="./img/galeria-12.png" class="img-fluid" alt="Imagem da Galeria 12" loading="lazy"/>
+       </div>
+      <!-- Fim da Imagem 12 -->
+
+    </div>
+  </div>
+ </section>
+<!-- Fim Galeria -->
+
+
+<!--WhatsApp Botão Flutuante -->
+ <aside class="whatsapp" aria-label="Contato rápido via WhatsApp">
+  <div class="container-grid logo-whats">
+    <a href="https://wa.link/x1zzbu1" targer="_blank" rel="noopener norferrer" aria-label="Abrir conversa no WhatsApp">
+      <img class="pulse" src="./img/whats.logo.webp" alt="Ícone do WhatsApp"/>
+    </a>
+  </div>
+ </aside>
+<!-- Fim do WhatsApp Botão Flutuante -->
+
+</main>    
+<!-- Fim conteúdo principal -->
+</body>
+
+<!-- JS (sempre antes do </body>) -->
+  <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+</html>
