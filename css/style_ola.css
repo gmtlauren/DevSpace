@@ -64,3 +64,19 @@ header p {
 #menu a:hover {
     color: white;
 }
+
+#carouselExampleInterval{
+     width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+.novidades img{
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.whatsapp img{
+    width: 250px;
+}
