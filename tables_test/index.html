@@ -15,21 +15,85 @@
         .container{
             max-width: 1000px;
             margin: 0 auto;
-            background-color:white ;
+            background-color:rgb(255, 255, 110) ;
             padding: 30px;
             border: 12px;
             box-shadow: 0 4px 14px rgba(red, green, blue, alpha);
+            border-radius: 15px;
         }
         h1{
             text-align: center;
             margin-bottom: 10px;
         }
+        p.descricao{
+            text-align: center;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        .imagem-topo{
+            display: block;
+            width: 180px;
+            margin: 0 auto 20px auto;
+            border-radius: 10px;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+        }
+        th, td{
+            border:1px solid #555;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        thead th{
+            background-color: aliceblue;
+            font-weight: bold;
+        }
+        tbody tr:nth-child(even){
+            background-color: #f9f9f9;
+        }
+        tfoot td{
+            background-color: #efefef;
+            font-weight: bold;
+            text-align: center;
+        }
+        .col-marca{
+            width: 30%;
+        }
+        .col-modelo{
+            width: 40%;
+        }
+        .col-ano{
+            width: 30%;
+        }
+        .imagem-carros{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .imagem-carros img{
+            width: 70px;
+            height: 45px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+        .rodape-imagem{
+            display: block;
+            width: 120px;
+            margin: 25px auto 0 auto;
+            opacity: 0.9;
+        }
+
     </style>
 </head>
 <body>
 
     <div class="container">
-        <img src="./jeep.compass.webp" alt="Jeep Compass">
+        <img class="imagem-topo" src="./jeep.compass.webp" alt="Jeep Compass">
 
         <h1>Tabela de Veículos | Vendas</h1>
         <p class="descricao">
@@ -38,16 +102,16 @@
         <table>
     <thead>
         <tr>
-            <th>Marca</th>
-            <th>Modelo</th>
-            <th>Ano</th>
+            <th class="col-marca">Marca</th>
+            <th class="col-modelo">Modelo</th>
+            <th class="col-ano">Ano</th>
         </tr>
     </thead>
 
     <tbody>
         <!-- Jeep -->
         <tr>
-            <td>Jeep</td>
+            <td rowspan="3">Jeep</td>
             <td>
                 <div class="imagem-carros">
                     <img src="./jeep.compass.webp" alt="Jeep Compass"/>
@@ -58,7 +122,7 @@
         </tr>
 
         <tr>
-            <td>Jeep</td>
+        
             <td>
                 <div class="imagem-carros">
                     <img src="./jeep.renegade.webp" alt="Jeep Renegade"/>
@@ -69,7 +133,7 @@
         </tr>
 
         <tr>
-            <td>Jeep</td>
+        
             <td>
                 <div class="imagem-carros">
                     <img src="./jeep.rubicon.webp" alt="Jeep Rubicon"/>
@@ -81,19 +145,23 @@
 
         <!-- Ford -->
         <tr>
-            <td>Ford</td>
+            <td rowspan="2">Ford</td>
             <td>
+                <div class="imagem-carros">
                 <img src="./ford.ka.jpg" alt="Ford Ka"/>
                 <span>Ka</span>
+                </div>
             </td>
             <td>2020</td>
         </tr>
 
         <tr>
-            <td>Ford</td>
+        
             <td>
+                <div class="imagem-carros">
                 <img src="./ford.fiesta.webp" alt="Ford Fiesta"/>
                 <span>Fiesta</span>
+                </div>
             </td>
             <td>2019</td>
         </tr>
@@ -102,8 +170,10 @@
         <tr>
             <td>Chevrolet</td>
             <td>
+                <div class="imagem-carros">
                 <img src="./chevrolet.impala67.jpg" alt="Impala 67"/>
                 <span>Impala 67</span>
+                </div>
             </td>
             <td>1967</td>
         </tr>
@@ -111,7 +181,7 @@
 <!-- Rodapé Tabela -->
     <tfoot>
         <tr>
-            <td colspan="3">Últimas atualização: 24/03/2026</td>
+            <td colspan="3">Última atualização: 24/03/2026</td>
         </tr>
     </tfoot>
 </table>
