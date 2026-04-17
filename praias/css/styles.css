@@ -1,0 +1,38 @@
+:root {
+    --areia: #f3e7c9;
+    --espuma: #fffaf1;
+    --oceano: #0a5c78;
+    --oceano-profundo: #073b4c;
+    --turquesa: #16a6b6;
+    --sol: #f5a623;
+    --coral: #eb6f4d;
+    --texto: #13313f;
+    --texto-suave: #4f6c77;
+    --borda: rgba(7, 59, 76, 0.12);
+    --sombra: #0 20px 45px rgba(7, 59, 76, 0.16);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--texto);
+    background: radial-gradient(circle at top right, rgba(245,166,35,0.18), transparent 18%), linear-gradient(180deg, #f6fbfc 0%, #eef7f8 35%, #fff9f1 100%);
+}
+
+img {
+    display: block;
+    width: 30%;
+}
+
+a {
+    color: inherit;
+}
+
